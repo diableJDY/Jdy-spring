@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.leisure.legacy.mapper.legacy.LegacyMapper">
+    <select id="hollo"   resultType="string" >
+        SELECT ChannelName FROM LEISURE.tblViewOrderTotal WHERE seq=210957
+    </select>
+</mapper>
