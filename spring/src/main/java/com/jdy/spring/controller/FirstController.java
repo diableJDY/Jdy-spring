@@ -23,9 +23,9 @@ public class FirstController {
 
 
     @RequestMapping("/")
-    public String first(){
+    public List<Test> first(){
         List<Test> test  = firstMapper.getFirst();
-        return "first";
+        return test;
     }
 
 
