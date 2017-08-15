@@ -14,8 +14,15 @@ public class UserDao {
     private Connection c;
     private User user;
 
+    public UserDao(){
+
+    }
+
     public UserDao(ConnectionMaker connectionMaker) {
 
+        this.connectionMaker = connectionMaker;
+    }
+    public void setConnectionMaker(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
     }
 

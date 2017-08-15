@@ -7,7 +7,7 @@ import java.sql.SQLException;
  * Created by jdy on 2017-08-08.
  */
 public class CountingConnectionMaker implements ConnectionMaker{
-    int counter=0;
+    int counter=1;
     private ConnectionMaker realConnectionMaker;
 
     public CountingConnectionMaker(ConnectionMaker realConnectionMaker) {

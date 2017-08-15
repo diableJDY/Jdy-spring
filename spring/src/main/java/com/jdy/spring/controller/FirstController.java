@@ -5,6 +5,7 @@ import com.jdy.spring.domain.User;
 import com.jdy.spring.mapper.first.FirstMapper;
 import com.jdy.spring.test.Singleton;
 import com.jdy.spring.vo.Test;
+import org.junit.runner.JUnitCore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -57,7 +58,9 @@ public class FirstController {
     public void daoStudy()throws ClassNotFoundException,SQLException{
         ConnectionMaker connectionMaker=new DConnectionMaker();
 
-        UserDao dao =new UserDao(connectionMaker);
+        //UserDao dao =new UserDao(connectionMaker);
+        UserDao dao =new UserDao();
+        dao.setConnectionMaker(connectionMaker);
 
 
         User user=new User();
@@ -78,7 +81,6 @@ public class FirstController {
         System.out.println(user2.getId() + "조회성공");
 
     }
-
 
     @RequestMapping("/single")
     public void testSingle(){

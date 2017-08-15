@@ -11,17 +11,17 @@ public class CountingDaoFactory {
 
 
     @Bean
-    public UserDao userDao(){
+    public UserDao userDao()throws Exception{
         return new UserDao(connectionMaker());
     }
 
     @Bean
-    private ConnectionMaker connectionMaker() {
+    public ConnectionMaker connectionMaker() throws Exception{
         return new CountingConnectionMaker(realConnectionMaker());
     }
 
     @Bean
-    private ConnectionMaker realConnectionMaker() {
+    public ConnectionMaker realConnectionMaker() throws Exception {
         return new DConnectionMaker();
     }
 
