@@ -5,7 +5,6 @@ import com.jdy.spring.domain.User;
 import com.jdy.spring.mapper.first.FirstMapper;
 import com.jdy.spring.test.Singleton;
 import com.jdy.spring.vo.Test;
-import org.junit.runner.JUnitCore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

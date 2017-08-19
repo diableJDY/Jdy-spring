@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
  */
 public class RestTest {
 
-    @Test
+    /*@Test
     public void test(){
         String uri = "http://localhost:8739/";
         RestTemplate restTemplate=new RestTemplate();
@@ -17,5 +17,5 @@ public class RestTest {
 
 
 
-    }
+    }*/
 }

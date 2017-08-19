@@ -5,12 +5,11 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import org.springframework.dao.EmptyResultDataAccessException;
 
 import java.sql.SQLException;
 
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by jdy on 2017-08-03.
@@ -72,7 +71,7 @@ public class UserDaoTest {
         assertThat(dao.getCount(),is(2));
 
         dao.add(user2);
-        assertThat(dao.getCount(),is(4));
+        assertThat(dao.getCount(),is(3));
     }
 
 
