@@ -1,16 +1,14 @@
 package com.jdy.spring.controller;
 
-import com.jdy.spring.dao.*;
-import com.jdy.spring.domain.User;
 import com.jdy.spring.mapper.first.FirstMapper;
-import com.jdy.spring.test.Singleton;
 import com.jdy.spring.vo.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.SQLException;
+import javax.annotation.Resource;
 import java.util.List;
+
+//import javax.annotation.Resource;
 
 /**
  * Created by jdy on 2017-07-31.
@@ -18,13 +16,20 @@ import java.util.List;
 @RestController
 public class FirstController {
 
-    @Autowired
+    @Resource
     FirstMapper firstMapper;
 
 
     @RequestMapping("/")
     public List<Test> first(){
         List<Test> test  = firstMapper.getFirst();
+    	Test test1=new Test();
+    	//List<Test> test =new ArrayList<>();
+    	
+    	test1.setId(1);
+    	test1.setAge("35");
+    	test1.setName("j9y");
+    	test.add(test1);
         return test;
     }
 
@@ -35,25 +40,25 @@ public class FirstController {
 
         User user=new User();
         user.setId("cym2");
-        user.setName("최유미");
+        user.setName("理쒖쑀誘�");
         user.setPassword("1234");
 
         dao.add(user);
 
 
-        System.out.println(user.getId()+ "등록 성공");
+        System.out.println(user.getId()+ "�벑濡� �꽦怨�");
 
         User user2= dao.get(user.getId());
         System.out.println(user2.getName());
         System.out.println(user2.getPassword());
 
 
-        System.out.println(user2.getId() + "조회성공");
+        System.out.println(user2.getId() + "議고쉶�꽦怨�");
 
 
     }*/
 
-    @RequestMapping("/daoStudy")
+    /*@RequestMapping("/daoStudy")
     public void daoStudy()throws ClassNotFoundException,SQLException{
         ConnectionMaker connectionMaker=new DConnectionMaker();
 
@@ -64,20 +69,20 @@ public class FirstController {
 
         User user=new User();
         user.setId("cym4");
-        user.setName("최유미");
+        user.setName("理쒖쑀誘�");
         user.setPassword("1234");
 
         dao.add(user);
 
 
-        System.out.println(user.getId()+ "등록 성공");
+        System.out.println(user.getId()+ "�벑濡� �꽦怨�");
 
         User user2= dao.get(user.getId());
         System.out.println(user2.getName());
         System.out.println(user2.getPassword());
 
 
-        System.out.println(user2.getId() + "조회성공");
+        System.out.println(user2.getId() + "議고쉶�꽦怨�");
 
     }
 
@@ -88,13 +93,13 @@ public class FirstController {
         Singleton singleton2 = Singleton.getInstance();
 
         if(singleton1 == singleton2){
-            System.out.println("같은 singleton 객체");
+            System.out.println("媛숈� singleton 媛앹껜");
         }else{
-            System.out.println("다른 singleton 객체");
+            System.out.println("�떎瑜� singleton 媛앹껜");
         }
 
     }
-
+*/
 
 
 }
