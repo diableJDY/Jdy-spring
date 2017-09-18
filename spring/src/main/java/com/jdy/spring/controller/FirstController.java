@@ -24,8 +24,7 @@ public class FirstController {
     public List<Test> first(){
         List<Test> test  = firstMapper.getFirst();
     	Test test1=new Test();
-    	//List<Test> test =new ArrayList<>();
-    	
+
     	test1.setId(1);
     	test1.setAge("35");
     	test1.setName("j9y");
