@@ -1,8 +1,12 @@
 package com.jdy.spring.domain;
 
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.Generated;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+
 
 @Entity
 @Getter
@@ -10,5 +14,17 @@ import jdk.nashorn.internal.objects.annotations.Setter;
 public class Customer {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long idx;
+
+    @Column
+    private String name;
+
+    @Column
+    private String tel;
+
+    @Column
+    private String bigo;
+
 
 }

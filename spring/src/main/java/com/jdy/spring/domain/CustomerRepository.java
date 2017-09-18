@@ -1,4 +1,8 @@
 package com.jdy.spring.domain;
 
-public class CustomerRepository {
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface CustomerRepository extends CrudRepository<Customer,Long>{
+
 }
