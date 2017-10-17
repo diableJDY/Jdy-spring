@@ -1,7 +1,6 @@
 package com.jdy.spring.domain;
 
 
-import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
 
