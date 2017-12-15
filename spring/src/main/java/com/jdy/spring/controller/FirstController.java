@@ -1,9 +1,15 @@
 package com.jdy.spring.controller;
 
+import com.jdy.spring.dao.JUser;
 import com.jdy.spring.mapper.first.FirstMapper;
+import com.jdy.spring.mapper.user.UserMapper;
 import com.jdy.spring.vo.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -13,25 +19,48 @@ import java.util.List;
 /**
  * Created by jdy on 2017-07-31.
  */
-@RestController
+@Controller
 public class FirstController {
 
     @Resource
     FirstMapper firstMapper;
 
+    @Autowired
+    UserMapper userMapper;
+
 
     @RequestMapping("/")
-    public List<Test> first(){
-        List<Test> test  = firstMapper.getFirst();
-    	Test test1=new Test();
+    @ResponseBody
+    public List<Test> first() {
+        List<Test> test = firstMapper.getFirst();
+        Test test1 = new Test();
 
-    	test1.setId(1);
-    	test1.setAge("35");
-    	test1.setName("j9y");
-    	test.add(test1);
+        test1.setId(1);
+        test1.setAge("35");
+        test1.setName("j9y");
+        test.add(test1);
         return test;
     }
 
+
+    @RequestMapping("/jdys")
+    @ResponseBody
+    public String hello1() {
+        return "hello spring";
+    }
+
+    @RequestMapping("/jdy")
+    @ResponseBody
+    public String hello() {
+        return "hello spring";
+    }
+
+
+    @RequestMapping("/{name}")
+    public JUser home(@PathVariable String name) {
+        JUser user = userMapper.readUser(name);
+        return user;
+    }
 
     /*@RequestMapping("/study")
     public void study()throws ClassNotFoundException,SQLException{
