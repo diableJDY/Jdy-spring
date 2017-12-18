@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Gradle : ROOT.war (exploded)">
-    <output-path>$PROJECT_DIR$/spring/build/libs/exploded/ROOT.war</output-path>
+  <artifact type="exploded-war" name="Gradle : spring-0.0.1-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/spring/build/libs/exploded/spring-0.0.1-SNAPSHOT.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$/spring">
         <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
@@ -8,9 +8,9 @@
     </properties>
     <root id="root">
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/spring/build/libs/exploded/ROOT.war/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/spring/build/libs/exploded/spring-0.0.1-SNAPSHOT.war/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="spring/web/Web Gradle : ROOT.war" />
+      <element id="javaee-facet-resources" facet="spring/web/Web Gradle : spring-0.0.1-SNAPSHOT.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="spring" />
@@ -23,8 +23,6 @@
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-security:1.5.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.5.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.projectlombok:lombok:1.16.10" />
-          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
-          <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.16" />
           <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.43" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.5.16" />
@@ -45,7 +43,6 @@
           <element id="library" level="project" name="Gradle: javax.transaction:javax.transaction-api:1.2" />
           <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-jpa:1.11.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aspects:4.3.10.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.eclipse.jdt:ecj:3.12.3" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot:1.5.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.5.6.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.5.6.RELEASE" />
