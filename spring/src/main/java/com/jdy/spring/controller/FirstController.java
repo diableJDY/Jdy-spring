@@ -7,7 +7,6 @@ import com.jdy.spring.vo.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -61,6 +60,24 @@ public class FirstController {
         JUser user = userMapper.readUser(name);
         return user;
     }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
+
+    @RequestMapping("/admin")
+    @ResponseBody
+    public String admin(){
+        return "어드민페이지";
+    }
+
+    @RequestMapping("/user")
+    @ResponseBody
+    public String user(){
+        return "유저페이지";
+    }
+
 
     /*@RequestMapping("/study")
     public void study()throws ClassNotFoundException,SQLException{

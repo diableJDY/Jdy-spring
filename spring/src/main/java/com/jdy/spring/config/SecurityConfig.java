@@ -6,15 +6,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @Configuration
+@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     @Autowired
     UserService userService;
-
 
     @Override
     public void configure(WebSecurity web) throws Exception {
@@ -23,18 +24,29 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity httpSecurity) throws Exception {
         /*http.authorizeRequests()
                 .antMatchers("/jdy").authenticated()
                 .antMatchers("/**").permitAll();*/
-
-
-        http
+        httpSecurity
                 .csrf().disable().
-                authorizeRequests().
-                    anyRequest().authenticated()
+                authorizeRequests().antMatchers("/login","/hello").permitAll();
+
+
+        httpSecurity
+                .authorizeRequests()
+                .anyRequest().authenticated()
                 .and()
-                .formLogin();
+                .formLogin()
+                .usernameParameter("username")
+                .passwordParameter("password")
+                .loginPage("/login")
+                .defaultSuccessUrl("/")
+                .permitAll()
+            .and()
+                .logout()
+                .logoutSuccessUrl("/login")
+                .permitAll();
     }
 
 

@@ -37,6 +37,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-starter-security:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.16.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.16" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:jstl:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.5.16" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-jdbc:4.3.10.RELEASE" level="project" />
@@ -57,6 +59,9 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.transaction:javax.transaction-api:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.data:spring-data-jpa:1.11.6.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-aspects:4.3.10.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.5.16" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.5.16" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.eclipse.jdt:ecj:3.12.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.5.6.RELEASE" level="project" />
@@ -65,8 +70,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.16" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-beans:4.3.10.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-tx:4.3.10.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.5.16" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.5.16" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.16" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.validation:validation-api:1.1.0.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jboss.logging:jboss-logging:3.3.1.Final" level="project" />
@@ -97,6 +100,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-security:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.projectlombok:lombok:1.16.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.16" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.servlet:jstl:1.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: mysql:mysql-connector-java:5.1.43" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.5.16" level="project" />
@@ -117,6 +122,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.transaction:javax.transaction-api:1.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.data:spring-data-jpa:1.11.6.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-aspects:4.3.10.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.jdt:ecj:3.12.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.5.6.RELEASE" level="project" />
@@ -154,6 +160,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-starter-security:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.projectlombok:lombok:1.16.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.16" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.servlet:jstl:1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.5.8.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.5.16" level="project" />
@@ -174,6 +182,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: javax.transaction:javax.transaction-api:1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.data:spring-data-jpa:1.11.6.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-aspects:4.3.10.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jdt:ecj:3.12.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-test:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.jayway.jsonpath:json-path:2.2.0" level="project" />

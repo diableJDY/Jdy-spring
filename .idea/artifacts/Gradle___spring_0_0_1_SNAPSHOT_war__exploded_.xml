@@ -74,6 +74,9 @@
           <element id="library" level="project" name="Gradle: org.slf4j:jul-to-slf4j:1.7.25" />
           <element id="library" level="project" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.25" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.11" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-jasper/8.5.16/bc3abea0b148edb1498879ac31cd378157d84041/tomcat-embed-jasper-8.5.16.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/ecj/3.12.3/ade950992eb3caf6ab4f1a88706c755f0bf213d9/ecj-3.12.3.jar" />
         </element>
       </element>
     </root>
