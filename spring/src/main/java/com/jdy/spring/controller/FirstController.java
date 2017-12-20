@@ -5,12 +5,16 @@ import com.jdy.spring.mapper.first.FirstMapper;
 import com.jdy.spring.mapper.user.UserMapper;
 import com.jdy.spring.vo.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 //import javax.annotation.Resource;
@@ -49,9 +53,8 @@ public class FirstController {
     }
 
     @RequestMapping("/jdy")
-    @ResponseBody
     public String hello() {
-        return "hello spring";
+        return "test";
     }
 
 
@@ -64,6 +67,18 @@ public class FirstController {
     @RequestMapping("/login")
     public String login(){
         return "login";
+    }
+
+
+    @RequestMapping("/loginCk")
+    public ModelAndView loginCk(HttpSession session){
+        ModelAndView modelAndView = new ModelAndView();
+        JUser user = (JUser)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        modelAndView.addObject("auth",user);
+        modelAndView.setViewName("jdy");
+        session.setAttribute("sessionInfo",user);
+        return modelAndView;
     }
 
     @RequestMapping("/admin")

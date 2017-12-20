@@ -7,11 +7,11 @@
     <facet type="web" name="Web Gradle : spring-0.0.1-SNAPSHOT.war">
       <configuration>
         <webroots>
-          <root url="file://C:\project_intellij_dev\Jdy-spring\spring\src\main\webapp" relative="/" />
+          <root url="file://D:\project_intellij_dev\doowon-springboot\spring\src\main\webapp" relative="/" />
         </webroots>
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/../../spring/src/main/resources" />
           <root url="file://$MODULE_DIR$/../../spring/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../spring/src/main/resources" />
         </sourceRoots>
       </configuration>
     </facet>
